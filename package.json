@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "packageManager": "pnpm@7.29.3",
   "description": "Check for style contamination in the Vue project",
-  "license": "MIT",
   "homepage": "https://github.com/He110te4m/unplugin-vue-css-checker#readme",
   "repository": {
     "type": "git",
