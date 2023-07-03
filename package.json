@@ -1,7 +1,7 @@
 {
   "name": "unplugin-vue-css-checker",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "packageManager": "pnpm@7.29.3",
   "description": "Check for style contamination in the Vue project",
   "homepage": "https://github.com/He110te4m/unplugin-vue-css-checker#readme",
