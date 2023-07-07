@@ -20,7 +20,7 @@ export async function getAllSelectors(options: CheckerOptions) {
   const dir = resolvePath(projectRoot, cacheDir)
   cache = cache || new SelectorCache(dir)
 
-  enable && cache.load()
+  enable && await cache.load()
 
   await loadImmutableSelectors({
     root: projectRoot,
@@ -63,7 +63,7 @@ async function loadImmutableSelectors({ root, immutables, cache }: LoadOption) {
       const selectors = (await getSelectors(file))
         .filter(selector => !checkExcludeSelector(excludeSelectors, selector))
 
-      cache.set(file, selectors)
+      await cache.set(file, selectors)
 
       selectors.forEach((selector) => {
         selectorSet.add(selector)
